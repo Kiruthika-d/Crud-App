@@ -11,8 +11,8 @@ export class CourseService {
         return await this.courseModel.find({});
     }
   
-    async add(animal){
-      const createCourse = new this.courseModel(animal);
+    async add(course){
+      const createCourse = new this.courseModel(course);
       await createCourse.save();
     }
   
